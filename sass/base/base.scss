@@ -8,8 +8,25 @@
 
  html {
      box-sizing: border-box;
-     font-size: 50%;
+     font-size: 62.5%;
+
+     @include respond(tap-land) {
+         font-size: 56.25%;
+     }
+
+     @include respond(tap-port) {
+         font-size: 50%;
+     }
+
+     @include respond(big-desktop) {
+         font-size: 75%;
+     }
+
+
+
  }
+
+
 
  body {
      font-family: 'Open Sans', sans-serif;
@@ -21,13 +38,19 @@
 
  .container {
      max-width: 120rem;
-     margin: 4vw auto;
+     min-height: calc(100% - 2* 4vw);
      display: grid;
+     margin: 4vw auto;
      grid-template-rows: 10rem;
      grid-template-columns: repeat(8, [col-start] minmax(min-content, 14rem) [col-end]);
-     justify-content: center;
      margin-top: 4vh;
      margin-block: 4vh;
-     min-height: 100vh;
+     min-height: calc(100% - 2* 4vh);
+     overflow-x: hidden;
+
+     @include respond(tap-land) {
+         margin: 0 auto;
+     }
+
 
  }

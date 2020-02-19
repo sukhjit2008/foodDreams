@@ -1,9 +1,15 @@
-@import 'base/base.scss';
-@import 'base/variables.scss';
+@import 'abstracts/mixins';
 
-@import 'components/description.scss';
-@import 'components/my-shopping-list.scss';
-@import 'components/recipe-list.scss';
+@import 'base/base';
+@import 'base/variables';
+@import 'base/typography';
+
+@import 'components/description';
+@import 'components/my-shopping-list';
+@import 'components/recipe-list';
+@import 'components/detail';
+@import 'components/ingredients';
+@import 'components/how-to-cook-it';
 
 
-@import 'layout/header.scss'
+@import 'layout/header';

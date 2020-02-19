@@ -1,4 +1,21 @@
 .description {
-    background-color: red;
-    grid-column: col-start 3 / col-end 6
+    grid-column: col-start 3 / col-end 6;
+    display: grid;
+
+    grid-template-rows: 35% 12rem;
+    background-color: var(--color-grey-light-3);
+
+
+
+    &__image-box {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-image: url('../img/test-1.jpg');
+        background-size: cover;
+        background-position: center;
+        display: block;
+        filter: brightness(75%);
+
+
+    }
 }

@@ -1,0 +1,43 @@
+.ingredients {
+    background-color: var(--color-grey-light-2);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min-content, 20rem));
+    grid-column-gap: 2rem;
+    grid-row-gap: 3.5rem;
+    padding: 2rem;
+    justify-content: center;
+    justify-items: start;
+    font-size: 1.4rem;
+}
+
+.ingredient {
+    display: flex;
+    //flex-wrap: wrap;
+
+
+    &__icon {
+        height: 1.75rem;
+        width: 1.75rem;
+        fill: var(--color-primary-light);
+
+        margin-right: 1rem;
+    }
+
+    p {
+        margin-right: .5rem;
+
+    }
+
+
+
+    &__btn {}
+
+    &__btn-icon {
+        transform: translateY(.4rem);
+        height: 1.75rem;
+        width: 1.75rem;
+        fill: var(--color-grey-light-1);
+        margin-right: .5rem;
+
+    }
+}

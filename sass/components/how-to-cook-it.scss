@@ -1,0 +1,17 @@
+.how-to-cook {
+    padding: 3rem;
+    text-align: center;
+    display: gird;
+    grid-template-columns: minmax(max-content, min-content);
+    grid-template-rows: repeat(2, min-content);
+    background-color: var(--color-grey-light-3);
+
+    &__icon {
+        height: 1.75rem;
+        width: 1.75rem;
+        fill: #fff;
+        transform: translateY(.4rem);
+    }
+
+
+}
