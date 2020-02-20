@@ -23,7 +23,8 @@
 
         @include respond(phone) {
             width: 100%;
-            font-size: 1.7rem;
+            font-size: 1.6rem;
+            font-weight: 400;
         }
     }
 }

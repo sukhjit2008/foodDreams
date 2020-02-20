@@ -65,7 +65,8 @@ body {
     @media only screen and (max-width: 37.5em) {
       .heading-1__span {
         width: 100%;
-        font-size: 1.7rem; } }
+        font-size: 1.6rem;
+        font-weight: 400; } }
 
 .heading-2 {
   background-image: linear-gradient(to right, #FF3366, #BA265D);
