@@ -21,7 +21,7 @@
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
 
-        @include respond(phone) {
+        @include respond(tap-port) {
             width: 100%;
             font-size: 1.6rem;
             font-weight: 400;

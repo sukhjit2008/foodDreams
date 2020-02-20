@@ -1,6 +1,6 @@
 .my-shopping-list {
     background-color: #fff;
-    color: var(--color-grey-dark-2);
+    color: var(--color-grey-dark-1);
     grid-column:
         col-start 7/span 2;
     display: flex;
@@ -42,11 +42,11 @@
     }
 
     &__unit {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     &__type {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
 
     &__legal {
