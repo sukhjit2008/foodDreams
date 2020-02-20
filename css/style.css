@@ -309,7 +309,14 @@ body {
   .pages-navigation__icon {
     height: 1.75rem;
     width: 1.75rem;
-    fill: #fff; }
+    fill: #fff;
+    transition: all .1s; }
+
+#btn--right:hover .pages-navigation__icon {
+  transform: translateX(2px); }
+
+#btn--left:hover .pages-navigation__icon {
+  transform: translateX(-2px); }
 
 .detail {
   display: flex;
@@ -404,7 +411,7 @@ body {
     height: 1.75rem;
     width: 1.75rem;
     fill: #fff;
-    transform: translateY(0.4rem); }
+    transform: translateY(0.4rem) translateX(-2px); }
 
 .header {
   background-color: var(--color-grey-light-1);
