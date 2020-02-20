@@ -8,18 +8,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
-  @media only screen and (max-width: 75em) {
-    html {
-      font-size: 56.25%; } }
-  @media only screen and (max-width: 56.25em) {
-    html {
-      font-size: 50%; } }
-  @media only screen and (min-width: 112.5em) {
-    html {
-      font-size: 75%; } }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.6;
   font-size: 1.6rem;
   background-color: var(--color-grey-light-1);
@@ -27,14 +18,14 @@ body {
 
 .container {
   max-width: 120rem;
-  min-height: calc(100% - 2* 4vw);
+  min-height: calc(100% - 2 * 4vw);
   display: grid;
   margin: 4vw auto;
   grid-template-rows: 10rem;
   grid-template-columns: repeat(8, [col-start] minmax(min-content, 14rem) [col-end]);
   margin-top: 4vh;
   margin-block: 4vh;
-  min-height: calc(100% - 2* 4vh);
+  min-height: calc(100% - 2 * 4vh);
   overflow-x: hidden; }
   @media only screen and (max-width: 75em) {
     .container {
@@ -63,16 +54,18 @@ body {
   transform: translateY(-70%) rotate(-10deg); }
   @media only screen and (max-width: 62.5em) {
     .heading-1 {
-      width: 75%; } }
-  @media only screen and (max-width: 37.5em) {
-    .heading-1 {
-      width: 100%; } }
+      width: 75%;
+      transform: translateY(-30%) rotate(0deg); } }
   .heading-1__span {
     padding: 1rem;
     background-color: rgba(235, 47, 100, 0.9);
     color: var(--color-grey-light-1);
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-1__span {
+        width: 100%;
+        font-size: 1.7rem; } }
 
 .heading-2 {
   background-image: linear-gradient(to right, #FF3366, #BA265D);

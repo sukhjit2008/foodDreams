@@ -9,24 +9,22 @@
 
     @include respond(tap-port-land) {
         width: 75%;
+        transform: translateY(-30%) rotate(0deg);
     }
 
-    @include respond(phone) {
-        width: 100%
-    }
+
 
     &__span {
-
         padding: 1rem;
         background-color: rgba(#eb2f64, .9);
         color: var(--color-grey-light-1);
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
 
-
-
-
-
+        @include respond(phone) {
+            width: 100%;
+            font-size: 1.7rem;
+        }
     }
 }
 
